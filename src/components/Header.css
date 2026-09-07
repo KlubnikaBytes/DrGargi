@@ -32,8 +32,15 @@
   z-index: 1001;
 }
 
-.logo-icon {
-  color: var(--white);
+.logo-img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 /* Text should always be white because both the hero top and the scrolled header are dark green. */

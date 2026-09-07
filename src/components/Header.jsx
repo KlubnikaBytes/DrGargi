@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Stethoscope } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
@@ -18,8 +18,7 @@ const Header = () => {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-container">
         <a href="#" className="logo">
-          <Stethoscope className="logo-icon" />
-          <span>Dr. Gargi</span>
+          <img src={`/logo.png?t=${new Date().getTime()}`} alt="Dr Gargi Logo" className="logo-img" />
         </a>
 
         <nav className={`nav ${mobileMenuOpen ? 'open' : ''}`}>
